@@ -9,7 +9,7 @@ public class bubblesort {
 				}
 			}
 		}
-		System.out.println("after sorting the array will be ");
+		System.out.println("after sorting the array will be the answer ");
 		for(int i=0;i<a.length;i++) {
 			System.out.print(a[i]);
 		}
