@@ -5,24 +5,37 @@ import java.util.Set;
 
 public class TreeMapMethods {
 	
-
-	public class TreeMapExample {
 	    public static void main(String[] args) {
 	        // Creating a TreeMap
 	        TreeMap<String, Integer> ageMap = new TreeMap<>();
+	        TreeMap<String,Integer> friends = new TreeMap<>();
+	        
 
 	        // Adding key-value pairs
 	        ageMap.put("John", 25);
-	        ageMap.put("Alice", 30);
+	        ageMap.put("Alice", 30);  
 	        ageMap.put("Bob", 28);
+	        
+	        //*
+	        friends.put("gaggi",4);
+	        friends.put("ammu",4);
+	        friends.put("manu", 4);
 
 	        // Retrieving a value
 	        int johnAge = ageMap.get("John");
 	        System.out.println("John's Age: " + johnAge);
+	        
+	        //*
+	        int get_int=friends.get("manu");
+	        System.out.println(get_int);
 
 	        // Checking if a key exists
 	        boolean containsJohn = ageMap.containsKey("John");
-	        System.out.println("Contains John? " + containsJohn);
+	        System.out.println("ageMap Contains John? " + containsJohn);
+	        
+	        //*
+	        boolean containsJohn1 = friends.containsKey("John");
+	        System.out.println("Friends Contains John? " + containsJohn1);
 
 	        // Getting all keys (sorted)
 	        Set<String> keys = ageMap.keySet();
@@ -37,5 +50,9 @@ public class TreeMapMethods {
 	        }
 	    }
 	
+	}
+	
 
-}
+	
+
+
