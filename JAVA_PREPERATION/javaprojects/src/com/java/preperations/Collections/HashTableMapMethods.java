@@ -1,8 +1,7 @@
 package com.java.preperations.Collections;
 import java.util.Hashtable;
 import java.util.Enumeration;
-import java.util.Map;
-import java.util.Set;
+
 
 public class HashTableMapMethods {
 	

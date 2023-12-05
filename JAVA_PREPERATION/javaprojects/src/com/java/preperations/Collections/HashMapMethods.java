@@ -10,11 +10,20 @@ public class HashMapMethods {
 	    public static void main(String[] args) {
 	        // Creating a HashMap
 	        HashMap<String, Integer> ageMap = new HashMap<>();
+	        //*
+	        HashMap<String, Integer> friends=new HashMap<>();
 
 	        // Adding key-value pairs
 	        ageMap.put("John", 25);
 	        ageMap.put("Alice", 30);
 	        ageMap.put("Bob", 28);
+	        
+	        
+	        //*
+	        friends.put("yuva",4);
+	        friends.put("ram",4);
+	        friends.put("niru", 7);
+	        
 
 	        // Retrieving a value
 	        int johnAge = ageMap.get("John");
@@ -35,6 +44,12 @@ public class HashMapMethods {
 	        for (Map.Entry<String, Integer> entry : ageMap.entrySet()) {
 	            System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
 	        }
+	        
+	        //*
+	        for(Map.Entry<String ,Integer> name :friends.entrySet()) {
+	        	System.out.println("key = "+ name.getKey() +", Value = "+name.getValue());
+	        }
+	        System.out.println(friends.values()+" "+friends.keySet());
 	    }
 	
 
