@@ -2,7 +2,6 @@ package com.java.preperation.executers;
 
 import java.util.Scanner;
 
-
 import com.java.preperation.methods.ReplaceString;
 
 public class ReplaceStringExecuters {
