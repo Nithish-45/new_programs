@@ -8,5 +8,4 @@ public class NthPrimeNumberExecuters {
 		System.out.println(ref.nthprime(10));
 		
 	}
-
 }
