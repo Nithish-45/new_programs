@@ -279,5 +279,29 @@ public class MultiplePatterns {
 			System.out.println();
 		}
 	}
+	
+	//diamond
+	public void pattern31(){
+		int num=3;
+		int fh=1;
+		int sh=(num*num)+1;
+		int s=0;
+		for(int i=num; i>=1; i--) {
+			for(int j=s; j>=1; j--) {
+				System.out.print(" ");
+			}
+			for(int firstHC=1; firstHC<=i; firstHC++) {
+				if(firstHC==i)
+					System.out.print(fh++);
+				else
+					System.out.print((fh++)+"*");
+			}
+			for(int secondHC=1; secondHC<=i; secondHC++) {
+				System.out.print("*"+(sh++));
+			}
+			System.out.println();
+			s+=2;
+			sh=(sh-1)-((i-1)*2);
+		}
 
-}
+}}
