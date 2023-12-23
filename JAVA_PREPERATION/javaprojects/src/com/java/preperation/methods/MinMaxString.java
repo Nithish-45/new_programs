@@ -1,7 +1,7 @@
 package com.java.preperation.methods;
 
 public class MinMaxString {
-	void minmaxstr(String S) {
+	public void minmaxstr(String S) {
 		String a[]=S.split(" ")	;
 		String temp;
 		for(int i=0;i<a.length;i++) {
